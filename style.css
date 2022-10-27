@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Strait&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    /*
+    VARIABLES
+    */
+    /*font styling*/
+    --font-family: 'Strait', sans-serif; /*W400*/
+    --fs-title: 1.8rem;
+    --fs-normal: 1.4rem;
+    /*Colors*/
+    --color-bg: wheat;
+    --color-tooltip: darkgreen;
+}
+
+h1, h2, .canvas > *, .source, p, .tooltip {
+    font-family: var(--font-family);
+}
+
+a {
+    color: var(--color-font);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.canvas {
+    background-color: var(--color-bg);
+    width: 1000px;
+    height: 600px;
+}
+
+.tooltip {
+    position: absolute;
+    width: max-content;
+    height: auto;
+    background-color:var(--color-tooltip);
+    color: var(--color-bg);
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0.7;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

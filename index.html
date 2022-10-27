@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <link rel="shortcut icon" href="#">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data with a Choropleth Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type='module' src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js" integrity="sha512-TRzTPm8e1jUdGz4mhoZstgVz6TIwSYubMI+MKF18uf6zBX8gwrcO0tlH+U/YgbVUVVh15RbNSAgKlab37WFPSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="tooltip" class="tooltip"></div>
+    <h1 id="title">United States Educational Attainment</h1>
+    <h2 id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)</h2>
+    <svg class="canvas"></svg>
+    <p class='source'>Source: <a target="_blank" href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx">USDA Economic Research Service</a></p>
+    <p class="attribution">
+        Coded by 
+        <a target="_blank" href="https://github.com/EngineerCookie">
+            EngineerCookie
+        </a> 
+         as a certification proyect in 
+        <a target="_blank" 
+        href="https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map">
+            FreeCodeCamp.
+        </a>
+    </p>
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+<!--
+.county (4=>colors)
+    data-fips
+    data-education
+
+#legend (4=>colors)
+
+#tooltip
+    data-education
+
+-->
