@@ -12,7 +12,8 @@
     VARIABLES
     */
     /*font styling*/
-    --font-family: 'Strait', sans-serif; /*W400*/
+    --font-family: 'Strait', sans-serif;
+    /*W400*/
     --fs-title: 1.8rem;
     --fs-normal: 1.4rem;
     /*Colors*/
@@ -20,7 +21,12 @@
     --color-tooltip: darkgreen;
 }
 
-h1, h2, .canvas > *, .source, p, .tooltip {
+h1,
+h2,
+.canvas>*,
+.source,
+p,
+.tooltip {
     font-family: var(--font-family);
 }
 
@@ -29,14 +35,26 @@ a {
 }
 
 body {
-    margin: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-bg);
-    width: 100vw;
-    height: 100vh;
+}
+
+@media (max-width: 1000px) {
+    body {
+        display: block;
+    }
+}
+
+
+h1,
+h2,
+p {
+    margin: 0;
+    text-align: center;
 }
 
 .canvas {
@@ -49,7 +67,7 @@ body {
     position: absolute;
     width: max-content;
     height: auto;
-    background-color:var(--color-tooltip);
+    background-color: var(--color-tooltip);
     color: var(--color-bg);
     pointer-events: none;
     visibility: hidden;

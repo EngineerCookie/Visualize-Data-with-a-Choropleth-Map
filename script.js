@@ -81,7 +81,7 @@ canvas.selectAll('path')
         let match = sourceEdu.find(value => value.fips == d.id);
         return colorRange.find(range => range.maxRange > match.bachelorsOrHigher).fill;
     })
-    .on('mouseover', function (d, info) {
+    .on('mousemove', function (d, info) {
         tooltip.attr('data-education', (data = info) => {
             let match = sourceEdu.find(value => value.fips == data.id);
             return match.bachelorsOrHigher;
